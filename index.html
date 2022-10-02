@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>MusicPlayer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header><audio controls id="audio"></audio></header>
+    <h1 id="title"><span>合唱祭練習用 Music Player</span></h1>
+    <main></main>
+    <div id="sub-menu">
+    </div>
+    
+    <div id="main-menu">
+        <button type="button" onclick="plusPlayPoint(-30)" class="subSubB">◀︎◀︎</button>
+        <button type="button" onclick="plusPlayPoint(-5)" class="subB">◀︎</button>
+        <button type="button" onclick="startStop()" class="mainB">▷</button>
+        <button type="button" onclick="plusPlayPoint(5)" class="subB">▶︎</button>
+        <button type="button" onclick="plusPlayPoint(30)" class="subSubB">▶︎▶︎</button>
+
+    </div>
+
+    <div id="start-menu">
+        <h2>音声ファイル(mp3),歌詞ファイル(js)を選択してください</h2>
+        <h3>mp3</h3>
+        <input id="mp3" type="file" accept=".mp3" value="mp3">
+        <h3>js(歌詞)</h3>
+        <input id="js" type="file" accept=".js">
+        <button type="button" onclick="startPlaying()" id="start-button">再生開始</button>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>
