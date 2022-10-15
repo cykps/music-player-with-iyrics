@@ -1,2 +1,2 @@
-# music-player-with-lyrics
+# music-player-with-iyrics
 It's test poroject.
